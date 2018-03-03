@@ -1,0 +1,42 @@
+一:
+App运行时发生OOM的原因你知道哪几种？如何避免？
+1.资源对象没关闭造成的内存泄露，try catch finally中将资源回收放到finally语句可以有效避免OOM。资源性对象比如：
+
+1-1，Cursor
+1-2，调用registerReceiver后未调用unregisterReceiver()
+1-3，未关闭InputStream/OutputStream
+1-4，Bitmap使用后未调用recycle()
+
+2.作用域不一样，导致对象不能被垃圾回收器回收，比如：
+2-1，非静态内部类会隐式地持有外部类的引用，
+2-2，Context泄露
+概括一下，避免Context相关的内存泄露，记住以下事情：
+   1、 不要保留对Context-Activity长时间的引用（对Activity的引用的时候，必须确保拥有和Activity一样的生命周期）
+   2、尝试使用Context-Application来替代Context-Activity 3、如果你不想控制内部类的生命周期，应避免在Activity中使用非静态的内部类，而应该使用静态的内部类，并在其中创建一个对Activity的弱引用。
+      这种情况的解决办法是使用一个静态的内部类，其中拥有对外部类的WeakReference。
+2-3，Thread 引用其他对象也容易出现对象泄露。
+2-4，onReceive方法里执行了太多的操作
+
+3.内存压力过大
+  3-1，图片资源加载过多，超过内存使用空间，例如Bitmap 的使用
+  3-2，重复创建view，listview应该使用convertview和viewholder
+
+如何避免内存泄露：
+1.使用缓存技术，比如LruCache、DiskLruCache、对象重复并且频繁调用可以考虑对象池
+2.对于引用生命周期不一样的对象，可以用软引用或弱引用SoftReferner WeakReferner
+3.对于资源对象 使用finally 强制关闭
+4.内存压力过大就要统一的管理内存
+
+二:
+android客户端上，用java实现一个线程池（可以使用java的数据结构），需要满足可以往前或者往后插入task，可配置最大同时执行的线程数，并对线程池中当前同一个类型的连续task进行合并执行（假设同一类型的task可以合并成一次执行）
+1.往前或者往后插入task:LinkedBlockingQueue阻塞队列，结构为双向链表
+2.工作过程:
+加进来task,前启动的线程数未满,新建一个线程开始执行task
+线程已满，则加入到阻塞队列中等待执行;
+阻塞队列如果也满,抛出异常
+3.对同一个类型的连续task进行合并执行:
+使用一个hashMap，key==task的某一唯一属性
+value==arrayList< task >集合
+相同的task都会被放置在同一个key对应的value中
+不同的task交给线程执行，同时将该task的唯一属性值为key，新建arrayList集合放在hashmap中
+执行完毕task，回过头来清空该key对应的这条记录

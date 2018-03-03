@@ -1,0 +1,56 @@
+//#是一级标题;~是二级标题;
+################Measure过程
+~~~~~~~~~~~~~~~~~~~~~1、MeasureSpec 的理解
+由父View的MeasureSpec(作为switch语句条件)和子View的LayoutParams通过简单的计算得出一个针对子View的测量要求
+MeasureSpec:二进制存储，高两位是mode，后面30位存的是size（减少对象的分配开支）
+UPSPECIFIED : 父容器对于子容器没有任何限制,子容器想要多大就多大
+EXACTLY(-1): 父容器已经为子容器设置了尺寸,子容器应当服从这些边界,不论子容器想要多大的空间
+AT_MOST(-2)：子容器可以是声明大小内的任意大小
+LayoutParams：layout_width和layout_height
+MarginLayoutParams：封装了Margin和childDimension的数据
+childWidthMeasureSpec(或者childHeightMeasureSpec)：Padding+Margin+WidthUsed(heightUsed)
+// spec参数   表示父View的MeasureSpec 
+// padding参数    父View的Padding+子View的Margin，父View的大小减去这些边距，才能精确算出
+// 子View的MeasureSpec的size
+// childDimension参数  表示该子View内部LayoutParams属性的值（lp.width或者lp.height）
+// 可以是wrap_content、match_parent、一个精确指(an exactly size)
+public static int getChildMeasureSpec(int spec, int padding, int childDimension){}
+size=Math.max(0, specSize - padding)//偏移的子View大小
+childDimension//子View传入的精确值(>0)或者wrap_content,match_parent
+总共MeasureSpec(3种)*MarginLayoutParams(3种)=9种情况:
+父类传EXACTLY:
+1 子类childDimension:取childDimension,resultSize = EXACTLY
+2 子类MATCH_PARENT: 取size,resultSize=EXACTLY
+3 子类WRAP_CONTENT: 取size,resultSize=AT_MOST
+父类传AT_MOST:
+1 子类childDimension:取childDimension,resultSize = EXACTLY
+2 子类MATCH_PARENT:取childDimension,resultSize=AT_MOST
+3 子类WRAP_CONTENT: 取size,resultSize=AT_MOST
+父类传UNSPECIFIED:
+1 子类childDimension:取childDimension,resultSize = EXACTLY
+2 子类MATCH_PARENT:取0,resultSize = UNSPECIFIED
+3 子类WRAP_CONTENT: 取0,resultSize = UNSPECIFIED
+最后 return MeasureSpec.makeMeasureSpec(resultSize, resultMode); 
+
+~~~~~~~~~~~~~~~~~~~~~~2、View的测量过程主要是在onMeasure()方法
+measure()方法final不可重写,自定义View的测量，重写onMeasure()方法
+
+~~~~~~~~~~~~~~~~~~~~~~3、View的onMeasure 的默认实现
+onMeasure()方法内部调用->setMeasuredDimension():可以写死高宽
+//获取的是android:minHeight属性的值或者View背景图片的大小值
+getSuggestedMinimumWidth(){}:
+取mMinWidth, mBackground.getMinimumWidth()中的最小值
+View默认是测量很简单，大部分情况就是拿计算出来的MeasureSpec的size 当做最终测量的大小
+View的派生类,如TextView、Button、ImageView等，它们的onMeasure方法系统了都做了重写,会先去测量字符或者图片的高度得到字符高度等
+
+~~~~~~~~~~~~~~~~~~~~~~4、ViewGroup的Measure过程
+ViewGroup 类并没有实现onMeasure;FrameLayout 有onMeasure 方法
+int maxHeight = maxWidth = childState = 0;遍历子View
+//所有的孩子测量之后，经过一系类的计算之后通过setMeasuredDimension设置自己的宽高，
+//对于FrameLayout 可能用最大的字View的大小，对于LinearLayout，可能是高度的累加，
+//具体测量的原理去看看源码。总的来说，父View是等所有的子View测量结束之后，再来测量自己。
+setMeasuredDimension(resolveSizeAndState(maxWidth, widthMeasureSpec, childState),        
+resolveSizeAndState(maxHeight, heightMeasureSpec, childState << MEASURED_HEIGHT_STATE_SHIFT));
+
+
+

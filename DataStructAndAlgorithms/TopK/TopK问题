@@ -1,0 +1,148 @@
+!!!!!!!!!!!!!!!!!!!!!!!!TopK
+##############有1亿个浮点数，如果找出期中最大的10000个？
+局部淘汰法:
+用一个容器保存前10000个数，然后将剩余的所有数字——与容器内的最小数字相比，如果所有后续的元素都比容器内的10000个数还小，那么容器内这个10000个数就是最大10000个数;
+如果某一后续元素比容器内最小数字大，则删掉容器内最小元素，并将该元素插入容器，最后遍历完这1亿个数;
+时间复杂度为O（n+m^2），其中m为容器的大小，即10000。
+
+Hash法:
+如果这1亿个书里面有很多重复的数，先通过Hash法，把这1亿个数字去重复，
+这样如果重复率很高的话，会减少很大的内存用量，从而缩小运算空间，
+然后通过分治法或最小堆法查找最大的10000个数
+
+分治法:
+1亿个数据分成100份，每份100万个数据,找到每份数据中最大的10000个
+最后在剩下的100 * 10000个数据里面找出最大的10000个
+
+
+(百万记录)快速排序:
+数据分为2堆，如果大的那堆个数N大于10000个,继续对大堆快速排序一次分成2堆
+如果大堆个数N小于10000个，就在小的那堆里面快速排序一次，找第10000-n大的数字,递归以上过程
+100份100万-->找最大10000个数--------->100次
+100个最大的10000个数===(一份)100万中找最大10000个数----->1次
+总共需101次100万中找最大10000个数;
+
+最小堆:
+读入前m个数来创建大小为m的最小堆,建堆的时间复杂度为O（mlogm）
+将剩余元素替换堆顶元素并重新调整堆为最小堆,该算法的时间复杂度为O（nmlogm）,空间复杂度取决于10000（常数)
+
+
+
+#########如果需要查找10亿个查询次（每个占8B）中出现频率最高的10个,
+(下面针对不容的应用场景，分析了适合相应应用场景的解决方案)
+1 单机+单核+足够大内存
+方案1:10亿个查询次所需的内存大约是10^9 * 8B-->约8GB内存;直接在内存中对查询次进行排序，顺序遍历找出10个出现频率最大的即可
+方案2:先用HashMap求出每个词出现的频率，然后求出频率最大的10个词。
+
+2 单机+多核+足够大内存
+直接在内存总使用Hash方法将数据划分成n个partition，每个partition交给一个线程处理，线程的处理逻辑同（1）类似，
+最后一个线程将结果归并
+
+3 单机+单核+受限内存
+多次hash切分,采用（1）的方法依次处理每个小文件。
+
+4 多机+受限内存
+这种情况，为了合理利用多台机器的资源，可将数据分发到多台机器上，每台机器采用（3）中的策略解决本地的数据。
+可采用hash+socket方法进行数据分发。
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!在 MVC 框架中，请求流程如下
+#################介绍一
+MVC的概念:MVC模式（Model–view–controller）是软件工程中的一种软件架构模式，把软件系统分为三个基本部分：模型（Model）、视图（View）和控制器（Controller）。
+
+View接受用户的请求:
+View：与用户交互，响应用户的操作；
+Control：接收View的事件请求、数据等，通知Model
+Model：Model接收到Control指令后，独立运作，将结果通知给View；
+
+例如：User现在要搜索联系人名字为Jack的号码是多少
+View：在EditTextView中填写了Jack，点击搜索按钮Button；
+Control：接收到交互View发出的搜索请求，和字符串Jack，通知Model进行数据查询；
+Model：Model接受到关键字Jack，进行名字匹配，完毕后，通过接口给View发送号码，通知View显示；
+
+MVC特点：
+1、通常Android中Activity充当Control，布局中的各种View控件充当View；因为Activity既有Control又有View，所以Control和View有少量的耦合性；
+2、MVC把View和Model层很好的分离，启到了很好的解耦作用，耦合性低，减少代码模块之间的相互影响；
+3、耦合性低，可方便添加需求，扩展代码，减少代码的修改量；
+3、M、V、C三层模块分明，利于代码维护；
+作者：Yink_Liu
+链接：https://www.jianshu.com/p/3e7573126514
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+############介绍二
+1.先实现一个 model，需要有通知View更新的能力,当model加载成功，如从db、获取后，需要告知View：
+public class StudentModel {
+
+    String mId;
+    WelcomeActivity mActivity;
+
+    public StudentModel (WelcomeActivity activity) {
+        this.mActivity = activity;
+    }
+    public void loadModel (){
+        //search from db or intent
+        mId = "1201030018";
+        mActivity.updateUI(this);
+    }
+}
+
+2.Controller ： 我们为了更好的理解MVC，将Activity进行了拆解。提取了一个简单的Controller
+public class WelcomeController {
+
+    WelcomeActivity mActivity;
+    StudentModel mStudent;
+
+    WelcomeController (WelcomeActivity activity) {
+        this.mActivity = activity;
+    }
+
+    public void loadData (){
+        mStudent = new StudentModel(mActivity);
+        mStudent.loadModel();
+    }
+}
+
+3.View ： View需要发出点击事件，并且传递给Controller,同时需要根据Model更新UI：
+public class WelcomeActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+       //省略
+        final WelcomeController controller = new WelcomeController(this);
+        mFindBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                controller.loadData();
+            }
+        });
+    }
+
+    public void updateUI (StudentModel model) {
+        mID.setText(model.mId);
+    }
+}
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+关系型数据库的几种设计范式（1NF 2NF 3NF BCNF 4NF 5NF）
+对表进行第一范式(1NF)
+所有属性都是不可分的基本数据项,R∈1NF。
+对表进行第二范式(2NF)
+每一个非主属性都完全函数依赖于R的码
+
+第三范式（3NF） 3NF在2NF的基础之上，消除了非主属性对于码的传递函数依赖
+学号 → 系名，同时 系名 → 系主任，所以存在非主属性系主任对于码学号的传递函数依赖，所以学生表的设计，不符合3NF的要求。
+
+BCNF范式
+ 3NF 的基础上消除主属性对于码的部分与传递函数依赖。
+仓库（仓库名，管理员）
+库存（仓库名，物品名，数量）
+反例:
+已知函数依赖集：仓库名 → 管理员，管理员 → 仓库名，（仓库名，物品名）→ 数量
+码：（管理员，物品名），（仓库名，物品名）
+主属性：仓库名、管理员、物品名
+
+存在着主属性对于码的部分函数依赖与传递函数依赖。
+【仓库名】对于码【（管理员，物品名）】的部分函数依赖。
+
