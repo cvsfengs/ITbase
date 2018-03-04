@@ -1,0 +1,6 @@
+/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/CMakeFiles/Adapter.dir
+/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/CMakeFiles/rebuild_cache.dir
+/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/CMakeFiles/Test.dir
+/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/CMakeFiles/edit_cache.dir

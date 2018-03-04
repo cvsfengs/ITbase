@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/main.cpp
+iostream
+-
+src/ConcreteBuilder.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/ConcreteBuilder.h
+src/Director.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/Director.h
+src/Builder.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/Builder.h
+src/Product.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/Product.h
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/Builder.h
+Product.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/Product.h
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/ConcreteBuilder.h
+Builder.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/Builder.h
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/Director.h
+Builder.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/Builder.h
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/建造者模式/src/Product.h
+iostream
+-
+string
+-
+

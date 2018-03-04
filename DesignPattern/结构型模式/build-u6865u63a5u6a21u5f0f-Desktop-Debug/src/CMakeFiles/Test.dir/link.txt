@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTest.a  CMakeFiles/Test.dir/Abstraction.cpp.o CMakeFiles/Test.dir/ConcreteImplementorA.cpp.o CMakeFiles/Test.dir/ConcreteImplementorB.cpp.o CMakeFiles/Test.dir/Implementor.cpp.o CMakeFiles/Test.dir/RefinedAbstraction.cpp.o
+/usr/bin/ranlib libTest.a

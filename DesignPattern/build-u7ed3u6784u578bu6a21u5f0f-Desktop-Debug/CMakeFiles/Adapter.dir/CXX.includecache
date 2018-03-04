@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/main.cpp
+iostream
+-
+src/Adapter.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Adapter.h
+src/Adaptee.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Adaptee.h
+src/Target.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Target.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Adaptee.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Adapter.h
+Target.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Target.h
+Adaptee.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Adaptee.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Target.h
+

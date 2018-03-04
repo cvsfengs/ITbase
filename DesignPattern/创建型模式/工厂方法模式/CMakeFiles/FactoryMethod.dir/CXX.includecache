@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/main.cpp
+src/Factory.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/src/Factory.h
+src/ConcreteFactory.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/src/ConcreteFactory.h
+src/Product.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/src/Product.h
+iostream
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/src/ConcreteFactory.h
+Product.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/src/Product.h
+Factory.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/src/Factory.h
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/src/Factory.h
+Product.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/src/Product.h
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/工厂方法模式/src/Product.h
+

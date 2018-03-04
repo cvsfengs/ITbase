@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/main.cpp
+iostream
+-
+src/ConcreteImplementorA.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/ConcreteImplementorA.h
+src/ConcreteImplementorB.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/ConcreteImplementorB.h
+src/RefinedAbstraction.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/RefinedAbstraction.h
+src/Abstraction.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/Abstraction.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/Abstraction.h
+Implementor.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/Implementor.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/ConcreteImplementorA.h
+Implementor.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/Implementor.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/ConcreteImplementorB.h
+Implementor.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/Implementor.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/Implementor.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/RefinedAbstraction.h
+Abstraction.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/桥接模式/src/Abstraction.h
+

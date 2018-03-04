@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTest.a  CMakeFiles/Test.dir/Client.cpp.o CMakeFiles/Test.dir/ConcreteFactory.cpp.o CMakeFiles/Test.dir/ConcreteProduct.cpp.o CMakeFiles/Test.dir/Factory.cpp.o CMakeFiles/Test.dir/Product.cpp.o
+/usr/bin/ranlib libTest.a

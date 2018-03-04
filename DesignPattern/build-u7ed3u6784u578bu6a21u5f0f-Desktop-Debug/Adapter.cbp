@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Adapter"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Adapter">
+				<Option output="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Adapter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 Adapter"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Adapter/fast">
+				<Option output="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Adapter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 Adapter/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test">
+				<Option output="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/libTest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/Makefile&quot;  VERBOSE=1 Test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test/fast">
+				<Option output="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/libTest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/Makefile&quot;  VERBOSE=1 Test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zzp/Programs/ITBase/DesignPattern/build-u7ed3u6784u578bu6a21u5f0f-Desktop-Debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/main.cpp">
+			<Option target="Adapter"/>
+		</Unit>
+		<Unit filename="/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Adaptee.cpp">
+			<Option target="Test"/>
+		</Unit>
+		<Unit filename="/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Adaptee.h">
+			<Option target="Test"/>
+		</Unit>
+		<Unit filename="/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Adapter.cpp">
+			<Option target="Test"/>
+		</Unit>
+		<Unit filename="/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Adapter.h">
+			<Option target="Test"/>
+		</Unit>
+		<Unit filename="/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Target.cpp">
+			<Option target="Test"/>
+		</Unit>
+		<Unit filename="/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/Target.h">
+			<Option target="Test"/>
+		</Unit>
+		<Unit filename="/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/zzp/Programs/ITBase/DesignPattern/结构型模式/适配器模式/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

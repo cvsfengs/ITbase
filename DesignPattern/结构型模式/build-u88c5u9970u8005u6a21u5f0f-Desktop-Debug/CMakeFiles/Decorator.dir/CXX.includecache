@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/main.cpp
+iostream
+-
+src/ConcreteComponent.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/ConcreteComponent.h
+src/ConcreteDecoratorA.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/ConcreteDecoratorA.h
+src/ConcreteDecoratorB.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/ConcreteDecoratorB.h
+src/Component.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/Component.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/Component.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/ConcreteComponent.h
+Component.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/Component.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/ConcreteDecoratorA.h
+Decorator.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/Decorator.h
+Component.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/Component.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/ConcreteDecoratorB.h
+Decorator.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/Decorator.h
+Component.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/Component.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/Decorator.h
+Component.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/装饰者模式/src/Component.h
+

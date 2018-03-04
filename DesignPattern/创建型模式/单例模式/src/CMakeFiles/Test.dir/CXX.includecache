@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/单例模式/src/Singleton.cpp
+Singleton.h
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/单例模式/src/Singleton.h
+iostream
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/创建工厂模式/单例模式/src/Singleton.h
+

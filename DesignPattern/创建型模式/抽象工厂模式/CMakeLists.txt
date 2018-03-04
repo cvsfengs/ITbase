@@ -1,0 +1,12 @@
+PROJECT(main)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+#查找在某个路径下的所有源文件,不会递归搜索
+#将当前目录中的源文件名称赋值给变量 DIR_SRCS
+AUX_SOURCE_DIRECTORY(. DIR_SRCS)
+
+#ADD_SUBDIRECTORY 指明本项目包含一个子目录 src 
+ADD_SUBDIRECTORY(src)
+
+ADD_EXECUTABLE(main ${DIR_SRCS})
+TARGET_LINK_LIBRARIES( main Test )
