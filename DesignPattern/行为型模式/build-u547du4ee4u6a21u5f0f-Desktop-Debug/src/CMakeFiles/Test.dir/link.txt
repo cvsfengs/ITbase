@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTest.a  CMakeFiles/Test.dir/Command.cpp.o CMakeFiles/Test.dir/ConcreteCommand.cpp.o CMakeFiles/Test.dir/Invoker.cpp.o CMakeFiles/Test.dir/Receiver.cpp.o
+/usr/bin/ranlib libTest.a

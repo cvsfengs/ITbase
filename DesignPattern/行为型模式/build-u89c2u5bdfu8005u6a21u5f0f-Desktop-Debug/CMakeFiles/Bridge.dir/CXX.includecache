@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/main.cpp
+iostream
+-
+src/Subject.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/Subject.h
+src/Observer.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/Observer.h
+src/ConcreteObserver.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/ConcreteObserver.h
+src/ConcreteSubject.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/ConcreteSubject.h
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/ConcreteObserver.h
+Observer.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/Observer.h
+string
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/ConcreteSubject.h
+Subject.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/Subject.h
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/Observer.h
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/Subject.h
+Observer.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/观察者模式/src/Observer.h
+vector
+-
+
