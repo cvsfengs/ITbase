@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/Strategy.dir/main.cpp.o  -o Strategy src/libTest.a 

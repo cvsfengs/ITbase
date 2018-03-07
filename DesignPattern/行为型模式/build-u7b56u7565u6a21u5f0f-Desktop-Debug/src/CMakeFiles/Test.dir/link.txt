@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTest.a  CMakeFiles/Test.dir/ConcreteStrategyA.cpp.o CMakeFiles/Test.dir/ConcreteStrategyB.cpp.o CMakeFiles/Test.dir/Context.cpp.o CMakeFiles/Test.dir/Strategy.cpp.o
+/usr/bin/ranlib libTest.a

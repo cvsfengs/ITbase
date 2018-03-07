@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="view_post">使用UseView.Post方法</string>
+    <string name="use_runonuithread">使用RunOnUIThread方法</string>
 </resources>

@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/Flyweight.dir/main.cpp.o  -o Flyweight src/libTest.a 

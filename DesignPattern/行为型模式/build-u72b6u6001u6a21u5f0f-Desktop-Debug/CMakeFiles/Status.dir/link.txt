@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/Status.dir/main.cpp.o  -o Status src/libTest.a 

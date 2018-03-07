@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/Facade.cpp
+Facade.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/Facade.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/Facade.h
+SystemC.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemC.h
+SystemA.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemA.h
+SystemB.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemB.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemA.cpp
+SystemA.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemA.h
+iostream
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemA.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemB.cpp
+SystemB.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemB.h
+iostream
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemB.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemC.cpp
+SystemC.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemC.h
+iostream
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/外观模式/src/SystemC.h
+

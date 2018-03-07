@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/Proxy.dir/main.cpp.o  -o Proxy src/libTest.a 

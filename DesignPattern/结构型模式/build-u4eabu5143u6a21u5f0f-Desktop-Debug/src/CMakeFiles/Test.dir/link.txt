@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTest.a  CMakeFiles/Test.dir/ConcreteFlyweight.cpp.o CMakeFiles/Test.dir/Flyweight.cpp.o CMakeFiles/Test.dir/FlyweightFactory.cpp.o CMakeFiles/Test.dir/UnsharedConcreteFlyweight.cpp.o
+/usr/bin/ranlib libTest.a

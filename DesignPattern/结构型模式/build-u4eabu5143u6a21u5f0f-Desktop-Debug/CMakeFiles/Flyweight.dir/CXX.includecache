@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/享元模式/main.cpp
+iostream
+-
+src/ConcreteFlyweight.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/享元模式/src/ConcreteFlyweight.h
+src/FlyweightFactory.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/享元模式/src/FlyweightFactory.h
+src/Flyweight.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/享元模式/src/Flyweight.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/享元模式/src/ConcreteFlyweight.h
+Flyweight.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/享元模式/src/Flyweight.h
+string
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/享元模式/src/Flyweight.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/享元模式/src/FlyweightFactory.h
+Flyweight.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/享元模式/src/Flyweight.h
+map
+-
+string
+-
+

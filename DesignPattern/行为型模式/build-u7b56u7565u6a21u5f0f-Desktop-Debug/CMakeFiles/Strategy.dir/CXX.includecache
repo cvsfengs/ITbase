@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/main.cpp
+iostream
+-
+src/Context.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/Context.h
+src/ConcreteStrategyA.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/ConcreteStrategyA.h
+src/ConcreteStrategyB.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/ConcreteStrategyB.h
+src/Strategy.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/Strategy.h
+vector
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/ConcreteStrategyA.h
+Strategy.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/Strategy.h
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/ConcreteStrategyB.h
+Strategy.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/Strategy.h
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/Context.h
+Strategy.h
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/Strategy.h
+
+/home/zzp/Programs/ITBase/DesignPattern/行为型模式/策略模式/src/Strategy.h
+

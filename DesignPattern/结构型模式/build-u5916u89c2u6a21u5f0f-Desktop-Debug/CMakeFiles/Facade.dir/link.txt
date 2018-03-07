@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/Facade.dir/main.cpp.o  -o Facade src/libTest.a 

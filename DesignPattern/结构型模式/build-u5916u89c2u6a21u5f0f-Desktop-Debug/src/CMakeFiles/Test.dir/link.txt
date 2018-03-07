@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTest.a  CMakeFiles/Test.dir/Facade.cpp.o CMakeFiles/Test.dir/SystemA.cpp.o CMakeFiles/Test.dir/SystemB.cpp.o CMakeFiles/Test.dir/SystemC.cpp.o
+/usr/bin/ranlib libTest.a

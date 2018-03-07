@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/Proxy.cpp
+Proxy.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/Proxy.h
+iostream
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/Proxy.h
+RealSubject.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/RealSubject.h
+Subject.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/Subject.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/RealSubject.cpp
+RealSubject.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/RealSubject.h
+iostream
+-
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/RealSubject.h
+Subject.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/Subject.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/Subject.cpp
+Subject.h
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/Subject.h
+
+/home/zzp/Programs/ITBase/DesignPattern/结构型模式/代理模式/src/Subject.h
+
