@@ -4,6 +4,7 @@ package concurrency; /* Added by Eclipse.py */
 // {Args: 5 5 timeout}
 import java.util.concurrent.*;
 
+//01,12,23,34,40即:先拿左边再拿右边
 public class FixedDiningPhilosophers {
   public static void main(String[] args) throws Exception {
     int ponder = 5;
@@ -22,7 +23,7 @@ public class FixedDiningPhilosophers {
           sticks[i], sticks[i+1], i, ponder));
       else
         exec.execute(new Philosopher(
-          sticks[0], sticks[i], i, ponder));
+          sticks[i], sticks[0], i, ponder));
     if(args.length == 3 && args[2].equals("timeout"))
       TimeUnit.SECONDS.sleep(5);
     else {

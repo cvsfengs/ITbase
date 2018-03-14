@@ -11,6 +11,8 @@ public class Philosopher implements Runnable {
   private final int id;
   private final int ponderFactor;
   private Random rand = new Random(47);
+  
+  //随机睡眠一段时间
   private void pause() throws InterruptedException {
     if(ponderFactor == 0) return;
     TimeUnit.MILLISECONDS.sleep(

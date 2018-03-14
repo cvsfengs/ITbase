@@ -4,8 +4,10 @@ package concurrency; /* Added by Eclipse.py */
 // {Args: 0 5 timeout}
 import java.util.concurrent.*;
 
+//产生死锁的情况
 public class DeadlockingDiningPhilosophers {
   public static void main(String[] args) throws Exception {
+	  //越大sleep时间越长
     int ponder = 5;
     if(args.length > 0)
       ponder = Integer.parseInt(args[0]);
