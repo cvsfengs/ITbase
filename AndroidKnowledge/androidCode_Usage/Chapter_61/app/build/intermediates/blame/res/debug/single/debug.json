@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_shape_drawable_gradient_sweep.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/shape_drawable_gradient_sweep.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_transition_drawable.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/transition_drawable.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/anim_translate.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/anim/translate.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_clip_drawable.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/clip_drawable.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_scale_drawable.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/scale_drawable.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_edit.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/edit.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_shape_drawable_stroke.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/shape_drawable_stroke.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_bitmap_drawable_clamp.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/bitmap_drawable_clamp.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_bitmap_drawable.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/bitmap_drawable.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_shape_drawable_gradient_radius.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/shape_drawable_gradient_radius.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_inset_drawable.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/inset_drawable.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable-xhdpi_image1.jpg.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable-xhdpi/image1.jpg"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/layout_activity_test.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/layout/activity_test.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_bitmap_drawable_mirror.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/bitmap_drawable_mirror.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_shape_drawable_size_padding.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/shape_drawable_size_padding.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_shape_drawable.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/shape_drawable.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable_shape_drawable_gradient_linear.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable/shape_drawable_gradient_linear.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_61/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    }
+]

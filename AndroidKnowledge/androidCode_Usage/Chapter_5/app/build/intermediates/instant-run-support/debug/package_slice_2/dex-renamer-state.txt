@@ -1,0 +1,4 @@
+#Tue Mar 13 18:30:37 CST 2018
+base.0=/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_5/app/build/intermediates/transforms/dexMerger/debug/2
+path.0=classes.dex
+renamed.0=classes.dex

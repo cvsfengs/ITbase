@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_5/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "11,20,25,31,38",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "196,527,727,949,1237",
+                        "endLines": "17,22,29,36,41",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "486,684,941,1229,1402"
+                    },
+                    "to": {
+                        "startLines": "10,17,20,25,31",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "529,820,980,1195,1475",
+                        "endLines": "16,19,24,30,34",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "815,975,1190,1470,1637"
+                    }
+                },
+                {
+                    "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_5/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "4,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "105,56",
+                        "endColumns": "45,48",
+                        "endOffsets": "146,100"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,101",
+                        "endColumns": "45,48",
+                        "endOffsets": "96,145"
+                    }
+                },
+                {
+                    "source": "/home/zzp/Programs/ITBase/AndroidKnowledge/androidCode_Usage/Chapter_5/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,4,7,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "56,103,270,156,208",
+                        "endColumns": "46,52,60,51,61",
+                        "endOffsets": "98,151,326,203,265"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "254,301,354,415,467",
+                        "endColumns": "46,52,60,51,61",
+                        "endOffsets": "296,349,410,462,524"
+                    }
+                }
+            ]
+        }
+    ]
+}
