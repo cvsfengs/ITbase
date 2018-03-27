@@ -39,7 +39,24 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager mViewPager;
 
 
+    public void dumpCore(ViewGroup viewGroup){
+        String string=viewGroup.getClass().toString();
+        Log.e(TAG, "dumpCore: "+string.substring(string.lastIndexOf(".")+1));
+        if (viewGroup.getChildCount()>0){
+            for (int i=0;i<viewGroup.getChildCount();i++ ){
+                View child=viewGroup.getChildAt(i);
+                if (child instanceof ViewGroup) {
+                    ViewGroup viewGroup1= (ViewGroup) child;
+                    dumpCore(viewGroup1);
+                }
+            }
+        }
+    }
 
+    public void dumpViewTree(){
+        View decorView= getWindow().getDecorView();
+        dumpCore((ViewGroup) decorView);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        dumpViewTree();
     }
 
     @Override
