@@ -1,0 +1,24 @@
+1 模型层
+实体bean
+接口及其实现
+
+2 视图层
+接口及其实现
+Activity+XXXView
+
+3 Presenter层
+接口及其实现
+
+
+
+Activity 实现View接口，监听事件
+View接口行为的具体实现
+造一个与模型层数据有关的Presenter具体类实例，
+Activity属于View层它会动态创建一个Presenter实例
+
+
+Presenter实例又持有View接口和Model接口的引用
+具体Presenter间接地让View接口和Model接口进行操作。
+疑惑点：在构建Presenter时候，为什么使用动态创建匿名Model接口的对象实例，而传参View接口
+1 传参是为了绑定Activity，即得到Activity的引用，从而获得Activity重写的方法
+2 使用匿名Model接口的实例，onCreate会动态构造Model具体类接口，不需要额外依赖于外界扩展的子View。
